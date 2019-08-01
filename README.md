@@ -10,7 +10,7 @@ To test run `npm run test` or `npm run buildAndRun` this will run /dist/examples
 
 ## Installing
 
-To install run `npm i //TODO get npm name`
+To install run `npm i simpleweb.js`
 
 ## Using
 
