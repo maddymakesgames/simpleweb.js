@@ -47,7 +47,7 @@ Endpoints using typescript class implements
 ```typescript
 class HelloWorldExample implements Endpoint {
     name = '/helloWorld';
-    parameters = ['none];
+    parameters = ['none'];
     permissionLevel = 0;
     returns = 'Hello World!';
     method = HTTPMethods.GET;
