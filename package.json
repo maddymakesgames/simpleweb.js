@@ -1,0 +1,23 @@
+{
+  "name": "simpleweb.js",
+  "version": "1.0.0",
+  "description": "A simple web framework",
+  "repository":{
+	"type": "github",  
+	"url": ""
+  },
+  "main": "./dist//api.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.6.8",
+    "typescript": "^3.5.3"
+  },
+  "types": "/dist/api.d.ts",
+  "scripts": {
+    "test": "node ./dist/examples/runExamples.js",
+    "build": "tsc",
+    "buildAndRun": "tsc; node ./dist/examples/runExamples.js"
+  },
+  "author": "maddymakesgames",
+  "license": "ISC"
+}
