@@ -1,5 +1,5 @@
 {
-  "name": "simpleweb.js",
+  "name": "spider-server.js",
   "version": "1.0.0",
   "description": "A simple web framework",
   "repository":{
