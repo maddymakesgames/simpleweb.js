@@ -1,4 +1,4 @@
-# Simple Api Framework
+# spider-server.js
 
 This is a simple framework that can be used to develop apis or web applications with node.js
 
