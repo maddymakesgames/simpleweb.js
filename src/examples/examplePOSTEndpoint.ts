@@ -1,4 +1,4 @@
-import { Endpoint, HTTPMethods, ApiClient } from "../api";
+import { Endpoint, HTTPMethods } from "../api";
 import { ServerResponse, IncomingMessage, request } from "http";
 import * as fs from 'fs';
 

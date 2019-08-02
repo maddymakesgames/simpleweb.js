@@ -47,7 +47,7 @@ export class Api {
 		// Get the selected endpoint
 		let endpoint = (<string>req.url).slice(this.base.length).split('?')[0];
 		let splitEndpoint = endpoint.split('/');
-		splitEndpoint.pop()
+		endpoint = splitEndpoint.filter((s)=>s!='').join('/');
 		let e = this.endpoints.get(endpoint) || this.endpoints.get(endpoint + '/') || this.endpoints.get(splitEndpoint.join('/'));
 		
 		// Return an error if no endpoint is found or if the user doesn't have the required permissions
@@ -71,7 +71,8 @@ export class Api {
 	 * @param endpoint The endpoint to be added
 	 */
 	addEndpoint(endpoint:Endpoint):void {
-		this.endpoints.set(endpoint.name, endpoint);
+		const split = endpoint.name.split('/');
+		this.endpoints.set(split.filter((s)=>s!='').join('/'), endpoint);
 	}
 
 	/**
