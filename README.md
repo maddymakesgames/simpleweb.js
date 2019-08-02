@@ -20,7 +20,7 @@ First you must import the framework and create an instance of it.
 ```javascript
 const Api = require('api');
 
-const api = new Api();
+const api = new Api.Api();
 ```
 
 To add an endpoint you need to create and endpoint object and add that to end api instance
